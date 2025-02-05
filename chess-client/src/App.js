@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { Chess } from "chess.js"; // FIXED import
 import { Chessboard } from "react-chessboard";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://chess-room-backend.onrender.com");
 
 function App() {
   const [gameId, setGameId] = useState(null);
